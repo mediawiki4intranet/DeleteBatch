@@ -8,6 +8,10 @@ class SpecialDeleteBatch extends SpecialPage {
 		parent::__construct( 'DeleteBatch'/*class*/, 'deletebatch'/*restriction*/ );
 	}
 
+	protected function getGroupName() {
+		return 'pagetools';
+	}
+
 	/**
 	 * Show the special page
 	 *
